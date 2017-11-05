@@ -1,0 +1,6 @@
+framework module Pods_SwiftPTV_Tests {
+  umbrella header "Pods-SwiftPTV_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
