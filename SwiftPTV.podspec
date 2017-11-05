@@ -15,6 +15,6 @@ PTV Timetable V3 API framework for iOS and macOS written in Swift, with growing 
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SwiftPTV/Classes/**/*.{swift}'
+  s.source_files = 'Classes/**/*.{swift}'
 
 end
