@@ -64,7 +64,6 @@
 		13F9C79F1FAF22BF005F5E13 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		13F9C7A01FAF22BF005F5E13 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		13F9C7A91FAF24E1005F5E13 /* SwiftPTVmacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTVmacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13F9C7AC1FAF24E1005F5E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +89,7 @@
 			children = (
 				13F9C7971FAF2264005F5E13 /* Repository Files */,
 				13F9C7781FAF201F005F5E13 /* Classes */,
-				137C67071FAF1DD100E9C462 /* SwiftPTViOS */,
-				13F9C7AA1FAF24E1005F5E13 /* SwiftPTVmacOS */,
+				13F9C7C01FAF25AA005F5E13 /* Assets */,
 				137C67061FAF1DD100E9C462 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,14 +101,6 @@
 				13F9C7A91FAF24E1005F5E13 /* SwiftPTVmacOS.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		137C67071FAF1DD100E9C462 /* SwiftPTViOS */ = {
-			isa = PBXGroup;
-			children = (
-				137C67091FAF1DD100E9C462 /* Info.plist */,
-			);
-			path = SwiftPTViOS;
 			sourceTree = "<group>";
 		};
 		13F9C7781FAF201F005F5E13 /* Classes */ = {
@@ -148,12 +138,12 @@
 			name = "Repository Files";
 			sourceTree = "<group>";
 		};
-		13F9C7AA1FAF24E1005F5E13 /* SwiftPTVmacOS */ = {
+		13F9C7C01FAF25AA005F5E13 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				13F9C7AC1FAF24E1005F5E13 /* Info.plist */,
+				137C67091FAF1DD100E9C462 /* Info.plist */,
 			);
-			path = SwiftPTVmacOS;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftPTViOS/Info.plist;
+				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -446,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftPTViOS/Info.plist;
+				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -520,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftPTVmacOS/Info.plist;
+				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -588,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = SwiftPTVmacOS/Info.plist;
+				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
