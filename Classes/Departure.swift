@@ -2,16 +2,16 @@
 import Foundation
 
 public struct Departure: Codable {
-    let stopID: Int?
-    let routeID: Int?
-    let runID: Int?
-    let directionID: Int?
-    let disruptionIDs: [Int]?
-    let scheduledDeparture: Date?
-    let estimatedDeparture: Date?
-    let atPlatform: Bool?
-    let platformNumber: String?
-    let flags: String?
+    public let stopID: Int?
+    public let routeID: Int?
+    public let runID: Int?
+    public let directionID: Int?
+    public let disruptionIDs: [Int]?
+    public let scheduledDeparture: Date?
+    public let estimatedDeparture: Date?
+    public let atPlatform: Bool?
+    public let platformNumber: String?
+    public let flags: String?
     
     internal enum CodingKeys: String, CodingKey {
         case stopID = "stop_id"

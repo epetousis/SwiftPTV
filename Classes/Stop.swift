@@ -2,11 +2,11 @@
 import Foundation
 
 public struct StopOnRoute: Codable {
-    let name: String?
-    let ID: Int?
-    let routeType: Int?
-    let latitude: Double?
-    let longitude: Double?
+    public let name: String?
+    public let ID: Int?
+    public let routeType: Int?
+    public let latitude: Double?
+    public let longitude: Double?
     
     internal enum CodingKeys: String, CodingKey {
         case name = "stop_name"

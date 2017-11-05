@@ -107,17 +107,13 @@
 		13F9C7781FAF201F005F5E13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				13F9C81F1FAF395B005F5E13 /* OAuthSwift */,
 				137C67081FAF1DD100E9C462 /* SwiftPTV.h */,
-				13F9C7791FAF201F005F5E13 /* Data++.swift */,
-				13F9C77A1FAF201F005F5E13 /* HMAC.swift */,
 				13F9C77B1FAF201F005F5E13 /* Departure.swift */,
-				13F9C77C1FAF201F005F5E13 /* Int++.swift */,
 				13F9C77D1FAF201F005F5E13 /* PTVRouteTypes.swift */,
 				13F9C77E1FAF201F005F5E13 /* Responses.swift */,
-				13F9C77F1FAF201F005F5E13 /* SHA1.swift */,
 				13F9C7801FAF201F005F5E13 /* PTVDepartures.swift */,
 				13F9C7811FAF201F005F5E13 /* PTVStops.swift */,
-				13F9C7821FAF201F005F5E13 /* Utils.swift */,
 				13F9C7831FAF201F005F5E13 /* Stop.swift */,
 				13F9C7841FAF201F005F5E13 /* SwiftPTV.swift */,
 				13F9C7851FAF201F005F5E13 /* Route.swift */,
@@ -146,6 +142,18 @@
 				137C67091FAF1DD100E9C462 /* Info.plist */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		13F9C81F1FAF395B005F5E13 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				13F9C7791FAF201F005F5E13 /* Data++.swift */,
+				13F9C77A1FAF201F005F5E13 /* HMAC.swift */,
+				13F9C77C1FAF201F005F5E13 /* Int++.swift */,
+				13F9C77F1FAF201F005F5E13 /* SHA1.swift */,
+				13F9C7821FAF201F005F5E13 /* Utils.swift */,
+			);
+			name = OAuthSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

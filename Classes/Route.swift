@@ -2,8 +2,8 @@
 import Foundation
 
 public struct RouteType: Codable {
-    let name: String?
-    let type: Int?
+    public let name: String?
+    public let type: Int?
     
     internal enum CodingKeys: String, CodingKey {
         case name = "route_type_name"
@@ -12,10 +12,10 @@ public struct RouteType: Codable {
 }
 
 public struct Route: Codable {
-    let type: Int?
-    let ID: Int?
-    let name: String?
-    let number: String?
+    public let type: Int?
+    public let ID: Int?
+    public let name: String?
+    public let number: String?
     
     internal enum CodingKeys: String, CodingKey {
         case type = "route_type"
