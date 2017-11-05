@@ -8,7 +8,7 @@ public class SwiftPTV {
     internal var routeTypes: [RouteType]?
     internal let decoder: JSONDecoder
 
-    init(apiKey: String, userID: String) {
+    public init(apiKey: String, userID: String) {
         self.apiKey = apiKey
         self.userID = userID
         self.decoder = JSONDecoder()
