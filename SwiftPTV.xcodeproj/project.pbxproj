@@ -42,6 +42,12 @@
 		13F9C7841FAF201F005F5E13 /* SwiftPTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPTV.swift; sourceTree = "<group>"; };
 		13F9C7851FAF201F005F5E13 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		13F9C7861FAF201F005F5E13 /* PTVRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTVRoutes.swift; sourceTree = "<group>"; };
+		13F9C7981FAF2282005F5E13 /* SwiftPTV.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftPTV.podspec; sourceTree = "<group>"; };
+		13F9C7991FAF2282005F5E13 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		13F9C79A1FAF2282005F5E13 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		13F9C79E1FAF22BF005F5E13 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		13F9C79F1FAF22BF005F5E13 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		13F9C7A01FAF22BF005F5E13 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		137C66F91FAF1D9000E9C462 = {
 			isa = PBXGroup;
 			children = (
+				13F9C7971FAF2264005F5E13 /* Repository Files */,
 				13F9C7781FAF201F005F5E13 /* Classes */,
 				137C67071FAF1DD100E9C462 /* SwiftPTViOS */,
 				137C67061FAF1DD100E9C462 /* Products */,
@@ -100,6 +107,19 @@
 				13F9C7861FAF201F005F5E13 /* PTVRoutes.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		13F9C7971FAF2264005F5E13 /* Repository Files */ = {
+			isa = PBXGroup;
+			children = (
+				13F9C79F1FAF22BF005F5E13 /* .gitignore */,
+				13F9C79E1FAF22BF005F5E13 /* .swift-version */,
+				13F9C7A01FAF22BF005F5E13 /* .travis.yml */,
+				13F9C7991FAF2282005F5E13 /* LICENSE */,
+				13F9C79A1FAF2282005F5E13 /* README.md */,
+				13F9C7981FAF2282005F5E13 /* SwiftPTV.podspec */,
+			);
+			name = "Repository Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
