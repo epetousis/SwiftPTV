@@ -12,3 +12,5 @@ The PTV Timetable API Data is licensed under a Creative Commons Attribution 4.0 
 
 `Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.`
 
+See the [PTV website](https://www.ptv.vic.gov.au/about-ptv/ptv-data-and-reports/digital-products/ptv-timetable-api/) for more information.
+
