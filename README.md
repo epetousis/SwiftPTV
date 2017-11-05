@@ -1,5 +1,5 @@
 # SwiftPTV
-A Public Transport Victoria framework written in Swift.
+A PTV Timetable framework written in Swift.
 
 ## Disclaimer
 This framework is not maintained by or endorsed by Public Transport Victoria.
