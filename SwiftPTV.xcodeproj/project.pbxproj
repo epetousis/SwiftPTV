@@ -40,7 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		137C67051FAF1DD100E9C462 /* SwiftPTViOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTViOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		137C67051FAF1DD100E9C462 /* SwiftPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		137C67081FAF1DD100E9C462 /* SwiftPTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPTV.h; sourceTree = "<group>"; };
 		137C67091FAF1DD100E9C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13F9C7791FAF201F005F5E13 /* Data++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data++.swift"; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		13F9C79E1FAF22BF005F5E13 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		13F9C79F1FAF22BF005F5E13 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		13F9C7A01FAF22BF005F5E13 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		13F9C7A91FAF24E1005F5E13 /* SwiftPTVmacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTVmacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F9C7A91FAF24E1005F5E13 /* SwiftPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		137C67061FAF1DD100E9C462 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				137C67051FAF1DD100E9C462 /* SwiftPTViOS.framework */,
-				13F9C7A91FAF24E1005F5E13 /* SwiftPTVmacOS.framework */,
+				137C67051FAF1DD100E9C462 /* SwiftPTV.framework */,
+				13F9C7A91FAF24E1005F5E13 /* SwiftPTV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 			);
 			name = SwiftPTViOS;
 			productName = SwiftPTViOS;
-			productReference = 137C67051FAF1DD100E9C462 /* SwiftPTViOS.framework */;
+			productReference = 137C67051FAF1DD100E9C462 /* SwiftPTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		13F9C7A81FAF24E1005F5E13 /* SwiftPTVmacOS */ = {
@@ -201,7 +201,7 @@
 			);
 			name = SwiftPTVmacOS;
 			productName = SwiftPTVmacOS;
-			productReference = 13F9C7A91FAF24E1005F5E13 /* SwiftPTVmacOS.framework */;
+			productReference = 13F9C7A91FAF24E1005F5E13 /* SwiftPTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -375,9 +375,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTViOS;
-				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTV;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPTV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -442,9 +442,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTViOS;
-				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTV;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPTV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -518,9 +518,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTVmacOS;
-				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTV;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPTV;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -586,9 +586,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTVmacOS;
-				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.evilgoldfish.SwiftPTV;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPTV;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

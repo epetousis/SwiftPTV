@@ -10,5 +10,3 @@
 FOUNDATION_EXPORT double SwiftPTViOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftPTViOSVersionString[];
 
-#import "SwiftPTV-Swift.h"
-
