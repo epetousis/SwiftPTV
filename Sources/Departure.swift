@@ -13,7 +13,7 @@ public struct Departure: Codable {
     let platformNumber: String?
     let flags: String?
     
-    private enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case stopID = "stop_id"
         case routeID = "route_id"
         case runID = "run_id"

@@ -14,7 +14,7 @@ public struct RouteTypesResponse: Codable {
     let routeTypes: [RouteType]?
     let status: Status?
     
-    private enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case routeTypes = "route_types", status
     }
 }

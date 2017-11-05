@@ -8,7 +8,7 @@ public struct StopOnRoute: Codable {
     let latitude: Double?
     let longitude: Double?
     
-    private enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case name = "stop_name"
         case ID = "stop_id"
         case routeType = "route_type"
