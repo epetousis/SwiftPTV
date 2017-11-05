@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)
 [![License](https://img.shields.io/cocoapods/l/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Example
 
@@ -13,12 +14,25 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+### CocoaPods
+
 SwiftPTV is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SwiftPTV'
 ```
+
+### Carthage
+
+SwiftPTV is also available through [Carthage](https://github.com/Carthage/Carthage). To install
+it, add the following line to your Cartfile:
+
+```
+github "evilgoldfish/SwiftPTV"
+```
+
+Run `carthage update` to build the framework and drag the newly built `SwiftPTV.framework` into your Xcode project.
 
 ## Author
 
