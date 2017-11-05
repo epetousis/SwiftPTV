@@ -23,6 +23,11 @@
 		13C986051FAEF836007C51C6 /* SwiftPTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C985FC1FAEF836007C51C6 /* SwiftPTV.swift */; };
 		13C986061FAEF836007C51C6 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C985FD1FAEF836007C51C6 /* Responses.swift */; };
 		13C986071FAEF836007C51C6 /* PTVRouteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C985FE1FAEF836007C51C6 /* PTVRouteTypes.swift */; };
+		13C986221FAEFAA3007C51C6 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9861D1FAEFAA3007C51C6 /* HMAC.swift */; };
+		13C986231FAEFAA3007C51C6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9861E1FAEFAA3007C51C6 /* Utils.swift */; };
+		13C986241FAEFAA3007C51C6 /* Data++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9861F1FAEFAA3007C51C6 /* Data++.swift */; };
+		13C986251FAEFAA3007C51C6 /* Int++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C986201FAEFAA3007C51C6 /* Int++.swift */; };
+		13C986261FAEFAA3007C51C6 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C986211FAEFAA3007C51C6 /* SHA1.swift */; };
 		16409C737271C4F1D7FEEFB91E317D5A /* CwlPreconditionTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = FC004067434874641C7FD573C6D54FC8 /* CwlPreconditionTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17C8EE7DF3F57C8F99EAF63C6E61EA99 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCED5C53076B7249E95E0D1D43E1B985 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1A3E19B9F5EEB773C3BB61CA42F8BF62 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7224D3F69BFCF084E13946CE3B7646 /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -173,7 +178,6 @@
 		12989D830FCE4AEF54A357265111CAEF /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		129DA04B381B509DAEDD565711C5A0DA /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Sources/QuickObjectiveC/World.h; sourceTree = "<group>"; };
 		13C985F51FAEF835007C51C6 /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Departure.swift; path = SwiftPTV/Classes/Departure.swift; sourceTree = "<group>"; };
-		13C985F61FAEF835007C51C6 /* OAuthSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OAuthSwift; path = SwiftPTV/Classes/OAuthSwift; sourceTree = "<group>"; };
 		13C985F71FAEF836007C51C6 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Route.swift; path = SwiftPTV/Classes/Route.swift; sourceTree = "<group>"; };
 		13C985F81FAEF836007C51C6 /* PTVStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTVStops.swift; path = SwiftPTV/Classes/PTVStops.swift; sourceTree = "<group>"; };
 		13C985F91FAEF836007C51C6 /* PTVDepartures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTVDepartures.swift; path = SwiftPTV/Classes/PTVDepartures.swift; sourceTree = "<group>"; };
@@ -182,6 +186,11 @@
 		13C985FC1FAEF836007C51C6 /* SwiftPTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftPTV.swift; path = SwiftPTV/Classes/SwiftPTV.swift; sourceTree = "<group>"; };
 		13C985FD1FAEF836007C51C6 /* Responses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Responses.swift; path = SwiftPTV/Classes/Responses.swift; sourceTree = "<group>"; };
 		13C985FE1FAEF836007C51C6 /* PTVRouteTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PTVRouteTypes.swift; path = SwiftPTV/Classes/PTVRouteTypes.swift; sourceTree = "<group>"; };
+		13C9861D1FAEFAA3007C51C6 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = SwiftPTV/Classes/HMAC.swift; sourceTree = "<group>"; };
+		13C9861E1FAEFAA3007C51C6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = SwiftPTV/Classes/Utils.swift; sourceTree = "<group>"; };
+		13C9861F1FAEFAA3007C51C6 /* Data++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data++.swift"; path = "SwiftPTV/Classes/Data++.swift"; sourceTree = "<group>"; };
+		13C986201FAEFAA3007C51C6 /* Int++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int++.swift"; path = "SwiftPTV/Classes/Int++.swift"; sourceTree = "<group>"; };
+		13C986211FAEFAA3007C51C6 /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = SwiftPTV/Classes/SHA1.swift; sourceTree = "<group>"; };
 		16A20C34FBBE39465FCF6F0F34947C2F /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		194B2F0745EF6C9A632F0FCCD3C970A3 /* NMBObjCMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBObjCMatcher.swift; path = Sources/Nimble/Adapters/NMBObjCMatcher.swift; sourceTree = "<group>"; };
 		1BCD7C4F10E8CD2DCAD3B2734A26D9B0 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
@@ -364,6 +373,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C9861C1FAEFA80007C51C6 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				13C9861F1FAEFAA3007C51C6 /* Data++.swift */,
+				13C9861D1FAEFAA3007C51C6 /* HMAC.swift */,
+				13C986201FAEFAA3007C51C6 /* Int++.swift */,
+				13C986211FAEFAA3007C51C6 /* SHA1.swift */,
+				13C9861E1FAEFAA3007C51C6 /* Utils.swift */,
+			);
+			name = OAuthSwift;
+			sourceTree = "<group>";
+		};
 		3C3FDCB7F0ADE0D02BF96EB1D4E2C89F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,8 +437,8 @@
 		6FB2161D844741A102BD35796BF7119D /* SwiftPTV */ = {
 			isa = PBXGroup;
 			children = (
+				13C9861C1FAEFA80007C51C6 /* OAuthSwift */,
 				13C985F51FAEF835007C51C6 /* Departure.swift */,
-				13C985F61FAEF835007C51C6 /* OAuthSwift */,
 				13C985F91FAEF836007C51C6 /* PTVDepartures.swift */,
 				13C985FA1FAEF836007C51C6 /* PTVRoutes.swift */,
 				13C985FE1FAEF836007C51C6 /* PTVRouteTypes.swift */,
@@ -916,11 +937,16 @@
 				13C986051FAEF836007C51C6 /* SwiftPTV.swift in Sources */,
 				13C986041FAEF836007C51C6 /* Stop.swift in Sources */,
 				13C986031FAEF836007C51C6 /* PTVRoutes.swift in Sources */,
+				13C986261FAEFAA3007C51C6 /* SHA1.swift in Sources */,
+				13C986251FAEFAA3007C51C6 /* Int++.swift in Sources */,
 				13C986011FAEF836007C51C6 /* PTVStops.swift in Sources */,
 				13C986021FAEF836007C51C6 /* PTVDepartures.swift in Sources */,
 				13C986001FAEF836007C51C6 /* Route.swift in Sources */,
 				13C985FF1FAEF836007C51C6 /* Departure.swift in Sources */,
+				13C986221FAEFAA3007C51C6 /* HMAC.swift in Sources */,
 				4F4850C66C5C4D487FF4982C6B7C0C9F /* SwiftPTV-dummy.m in Sources */,
+				13C986231FAEFAA3007C51C6 /* Utils.swift in Sources */,
+				13C986241FAEFAA3007C51C6 /* Data++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
