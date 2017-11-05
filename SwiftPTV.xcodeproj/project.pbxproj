@@ -64,6 +64,7 @@
 		13F9C79F1FAF22BF005F5E13 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		13F9C7A01FAF22BF005F5E13 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		13F9C7A91FAF24E1005F5E13 /* SwiftPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F9C81E1FAF34B2005F5E13 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 		13F9C7971FAF2264005F5E13 /* Repository Files */ = {
 			isa = PBXGroup;
 			children = (
+				13F9C81E1FAF34B2005F5E13 /* Package.swift */,
 				13F9C79F1FAF22BF005F5E13 /* .gitignore */,
 				13F9C79E1FAF22BF005F5E13 /* .swift-version */,
 				13F9C7A01FAF22BF005F5E13 /* .travis.yml */,
