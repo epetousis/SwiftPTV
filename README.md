@@ -12,6 +12,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+* An API key and user ID from PTV. You can get one from [here](https://static.ptv.vic.gov.au/PTV/PTV%20docs/API/1475462320/PTV-Timetable-API-key-and-signature-document.RTF).
+
 ## Installation
 
 ### CocoaPods
