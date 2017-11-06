@@ -34,12 +34,12 @@ class AllRoutesForTypeViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func handleRefresh(sender: UIButton?) {
-        communicator.retrieveRouteTypes() { _ in
-            guard let routeTypeInt = Int(self.routeTypeField?.text ?? "0"),
-                let routeType = self.communicator.routeType(number: routeTypeInt) else {
+        let routeTypeText = self.routeTypeField?.text ?? "0"
+        communicator.retrieveRouteTypes(parameters: nil) { _ in
+            guard let routeType = Int(routeTypeText) else {
                     return
             }
-            self.communicator.retrieveRoutes(routeTypes: [routeType]) { routesResponse in
+            self.communicator.retrieveRoutes(parameters: ["route_types" : [routeType]]) { routesResponse in
                 if let routesResponse = routesResponse,
                     let routes = routesResponse.routes {
                     self.routes = routes

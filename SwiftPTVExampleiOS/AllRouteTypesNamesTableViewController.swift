@@ -32,7 +32,7 @@ class AllRouteTypesNamesTableViewController: UITableViewController {
     }
     
     @IBAction func handleRefresh(sender: UIRefreshControl?) {
-        communicator.retrieveRouteTypes() { routeTypesResponse in
+        communicator.retrieveRouteTypes(parameters: nil) { routeTypesResponse in
             DispatchQueue.main.async {
                 sender?.endRefreshing()
             }
