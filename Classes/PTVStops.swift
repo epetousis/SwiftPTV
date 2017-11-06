@@ -27,6 +27,12 @@ import Foundation
 
 public extension SwiftPTV {
 
+    /// Retrieve all stops on a specific route.
+    ///
+    /// - Parameters:
+    ///   - routeID: Identifier of route, returned by Routes API.
+    ///   - routeType: Number identifying transport mode, returned via RouteTypes API.
+    ///   - completionHandler: The completion handler to call when the request is complete.
     func retrieveStopsOnRoute(routeID: Int, routeType: RouteType, _ completionHandler: @escaping (StopsOnRouteResponse?) -> ()) {
         guard let routeType = routeType.type else {
             completionHandler(nil)

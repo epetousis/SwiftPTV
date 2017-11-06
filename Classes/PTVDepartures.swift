@@ -27,6 +27,12 @@ import Foundation
 
 public extension SwiftPTV {
 
+    /// Retrieve departures for all routes from a stop.
+    ///
+    /// - Parameters:
+    ///   - stopID: Identifier of stop, returned by Stops API.
+    ///   - routeType: Object identifying transport mode, returned by RouteTypes API.
+    ///   - completionHandler: The completion handler to call when the request is complete.
     func retrieveDepartures(stopID: Int, routeType: RouteType, _ completionHandler: @escaping (DeparturesResponse?) -> ()) {
         guard let routeType = routeType.type else {
             completionHandler(nil)

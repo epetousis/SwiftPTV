@@ -27,6 +27,9 @@ import Foundation
 
 public extension SwiftPTV {
     
+    /// Retrieve all route types and their names.
+    ///
+    /// - Parameter completionHandler: The completion handler to call when the request is complete.
     func retrieveRouteTypes(_ completionHandler: @escaping (RouteTypesResponse?) -> ()) {
         retrieveURL(endpoint: "/v3/route_types", parameters: nil) { data in
             if let data = data {

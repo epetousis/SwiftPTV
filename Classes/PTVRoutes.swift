@@ -27,6 +27,11 @@ import Foundation
 
 public extension SwiftPTV {
 
+    /// View route names and numbers for all routes.
+    ///
+    /// - Parameters:
+    ///   - routeTypes: The RouteTypes to filter by, returned via RouteTypes API
+    ///   - completionHandler: The completion handler to call when the request is complete.
     func retrieveRoutes(routeTypes: [RouteType]?, _ completionHandler: @escaping (RoutesResponse?) -> ()) {
         var parameters: [String : [Int]]? = nil
 
