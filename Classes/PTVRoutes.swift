@@ -27,7 +27,7 @@ import Foundation
 
 public extension SwiftPTV {
 
-    /// View route names and numbers for all routes.
+    /// Retrieve route names and numbers for all routes.
     ///
     /// - Parameters:
     ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
@@ -36,6 +36,23 @@ public extension SwiftPTV {
         retrieveURL(endpoint: "/v3/routes", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(RoutesResponse.self, from: data)
+                completionHandler(response)
+            } else {
+                completionHandler(nil)
+            }
+        }
+    }
+
+    /// Retrieve route name and number for specific route ID.
+    ///
+    /// - Parameters:
+    ///   - routeID: Route ID, returned by the Routes API.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
+    ///   - completionHandler: The completion handler to call when the request is complete.
+    func retrieveRouteDetails(routeID: Int, parameters: [String : Any]?, _ completionHandler: @escaping (RouteResponse?) -> ()) {
+        retrieveURL(endpoint: "/v3/routes/\(routeID)", parameters: parameters) { data in
+            if let data = data {
+                let response = try? self.decoder.decode(RouteResponse.self, from: data)
                 completionHandler(response)
             } else {
                 completionHandler(nil)

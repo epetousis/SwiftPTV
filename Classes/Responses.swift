@@ -48,6 +48,11 @@ public struct RoutesResponse: Codable {
     public let status: Status?
 }
 
+public struct RouteResponse: Codable {
+    public let route: Route?
+    public let status: Status?
+}
+
 public struct StopsOnRouteResponse: Codable {
     public let stops: [StopOnRoute]?
     public let status: Status?
