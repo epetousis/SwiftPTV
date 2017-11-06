@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftPTV'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'A PTV Timetable framework written in Swift.'
 
   s.description      = <<-DESC
