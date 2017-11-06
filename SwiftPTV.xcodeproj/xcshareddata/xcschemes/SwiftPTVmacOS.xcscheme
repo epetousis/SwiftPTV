@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13F9C7A81FAF24E1005F5E13"
-               BuildableName = "SwiftPTVmacOS.framework"
+               BuildableName = "SwiftPTV.framework"
                BlueprintName = "SwiftPTVmacOS"
                ReferencedContainer = "container:SwiftPTV.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13F9C7A81FAF24E1005F5E13"
-            BuildableName = "SwiftPTVmacOS.framework"
+            BuildableName = "SwiftPTV.framework"
             BlueprintName = "SwiftPTVmacOS"
             ReferencedContainer = "container:SwiftPTV.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13F9C7A81FAF24E1005F5E13"
-            BuildableName = "SwiftPTVmacOS.framework"
+            BuildableName = "SwiftPTV.framework"
             BlueprintName = "SwiftPTVmacOS"
             ReferencedContainer = "container:SwiftPTV.xcodeproj">
          </BuildableReference>
