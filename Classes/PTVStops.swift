@@ -50,4 +50,27 @@ public extension SwiftPTV {
         }
     }
 
+    /// Retrieve facilities at a specific stop. (Metro and V/Line stations only)
+    ///
+    /// - Parameters:
+    ///   - stopID: Identifier of stop, returned by Stops API.
+    ///   - routeType: Number identifying transport mode, returned via RouteTypes API.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
+    ///   - completionHandler: The completion handler to call when the request is complete.
+    func retrieveStopDetails(stopID: Int, routeType: RouteType, parameters: [String : Any]?, _ completionHandler: @escaping (StopResponse?) -> ()) {
+        guard let routeType = routeType.type else {
+            completionHandler(nil)
+            return
+        }
+        
+        retrieveURL(endpoint: "/v3/stops/\(stopID)/route_type/\(routeType)", parameters: parameters) { data in
+            if let data = data {
+                let response = try? self.decoder.decode(StopResponse.self, from: data)
+                completionHandler(response)
+            } else {
+                completionHandler(nil)
+            }
+        }
+    }
+
 }

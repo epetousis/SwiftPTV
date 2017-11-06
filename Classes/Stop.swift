@@ -40,3 +40,86 @@ public struct StopOnRoute: Codable {
         case longitude = "stop_longitude"
     }
 }
+
+public struct StopDetails: Codable {
+    let type: String?
+    let description: String?
+    let routeType: Int?
+    let location: StopLocation?
+    let amenities: StopAmenityDetails?
+    let accessibility: StopAccessibility?
+    let ID: Int?
+    let name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case type = "station_type"
+        case description = "station_description"
+        case routeType = "route_type"
+        case location = "stop_location"
+        case amenities = "stop_amenities"
+        case accessibility = "stop_accessibility"
+        case ID = "stop_id"
+        case name = "stop_name"
+    }
+    
+}
+
+public struct StopLocation: Codable {
+    let gps: StopGPS?
+}
+
+public struct StopGPS: Codable {
+    let latitude: Int?
+    let longitude: Int?
+}
+
+public struct StopAmenityDetails: Codable {
+    let toilet: Bool?
+    let taxiRank: Bool?
+    let carParking: String?
+    let cctv: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case toilet = "toilet"
+        case taxiRank = "taxi_rank"
+        case carParking = "car_parking"
+        case cctv = "cctv"
+    }
+    
+}
+
+public struct StopAccessibility: Codable {
+    let lighting: Bool?
+    let stairs: Bool?
+    let escalator: Bool?
+    let lifts: Bool?
+    let hearingLoop: Bool?
+    let tactileTiles: Bool?
+    let wheelchair: StopAccessibilityWheelchair?
+    
+    enum CodingKeys: String, CodingKey {
+        case lighting = "lighting"
+        case stairs = "stairs"
+        case escalator = "escalator"
+        case lifts = "lifts"
+        case hearingLoop = "hearing_loop"
+        case tactileTiles = "tactile_tiles"
+        case wheelchair = "wheelchair"
+    }
+    
+}
+
+public struct StopAccessibilityWheelchair: Codable {
+    let accessibleRamp: Bool?
+    let accessibleParking: Bool?
+    let accessiblePhone: Bool?
+    let accessibleToilet: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case accessibleRamp = "accessible_ramp"
+        case accessibleParking = "accessible_parking"
+        case accessiblePhone = "accessible_phone"
+        case accessibleToilet = "accessible_toilet"
+    }
+    
+}

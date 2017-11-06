@@ -58,6 +58,11 @@ public struct StopsOnRouteResponse: Codable {
     public let status: Status?
 }
 
+public struct StopResponse: Codable {
+    public let stop: StopDetails?
+    public let status: Status?
+}
+
 public struct DeparturesResponse: Codable {
     public let departures: [Departure]?
     public let status: Status?
