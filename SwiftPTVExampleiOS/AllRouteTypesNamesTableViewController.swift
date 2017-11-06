@@ -27,10 +27,24 @@ class AllRouteTypesNamesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.refreshControl?.beginRefreshing()
+        handleRefresh(sender: refreshControl)
     }
     
     @IBAction func handleRefresh(sender: UIRefreshControl?) {
-        // TODO: Handle refresh
+        communicator.retrieveRouteTypes() { routeTypesResponse in
+            DispatchQueue.main.async {
+                sender?.endRefreshing()
+            }
+            if let routeTypesResponse = routeTypesResponse,
+                let routeTypes = routeTypesResponse.routeTypes {
+                self.routeTypes = routeTypes
+
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,8 +66,8 @@ class AllRouteTypesNamesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "routeTypeCell", for: indexPath)
         let routeType = routeTypes[indexPath.row]
 
-        cell.textLabel?.text = routeType.name
-        cell.detailTextLabel?.text = String(describing: routeType.type)
+        cell.textLabel?.text = routeType.name ?? ""
+        cell.detailTextLabel?.text = String(describing: routeType.type ?? 0)
 
         return cell
     }
