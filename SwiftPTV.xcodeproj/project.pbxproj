@@ -13,6 +13,8 @@
 		131D178A1FB031B900A19F42 /* AllRoutesForTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D17891FB031B900A19F42 /* AllRoutesForTypeViewController.swift */; };
 		131D178C1FB062E300A19F42 /* PTVDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178B1FB062E300A19F42 /* PTVDirections.swift */; };
 		131D178E1FB069A700A19F42 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178D1FB069A700A19F42 /* Direction.swift */; };
+		131D178F1FB0754F00A19F42 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178D1FB069A700A19F42 /* Direction.swift */; };
+		131D17901FB0755200A19F42 /* PTVDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178B1FB062E300A19F42 /* PTVDirections.swift */; };
 		137C670A1FAF1DD100E9C462 /* SwiftPTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 137C67081FAF1DD100E9C462 /* SwiftPTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F9C7871FAF201F005F5E13 /* Data++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C7791FAF201F005F5E13 /* Data++.swift */; };
 		13F9C7881FAF201F005F5E13 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C77A1FAF201F005F5E13 /* HMAC.swift */; };
@@ -400,6 +402,8 @@
 				13F9C7BC1FAF24F7005F5E13 /* SwiftPTV.swift in Sources */,
 				13F9C7BD1FAF24F7005F5E13 /* Route.swift in Sources */,
 				13F9C7BE1FAF24F7005F5E13 /* PTVRoutes.swift in Sources */,
+				131D178F1FB0754F00A19F42 /* Direction.swift in Sources */,
+				131D17901FB0755200A19F42 /* PTVDirections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
