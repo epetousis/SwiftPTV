@@ -1,6 +1,6 @@
 //
-//  Responses.swift
-//  SwiftPTV
+//  Direction.swift
+//  SwiftPTViOS
 //
 //  Copyright (c) 2017 evilgoldfish.
 //
@@ -25,55 +25,16 @@
 
 import Foundation
 
-public enum Health: Int, Codable {
-    case Offline, Online
-}
+public struct Direction: Codable {
+    public let ID: Int?
+    public let name: String?
+    public let routeID: Int?
+    public let routeType: Int?
 
-public struct Status: Codable {
-    public let version: String?
-    public let health: Health? // 0 == Offline, 1 == Online
-}
-
-public struct RouteTypesResponse: Codable {
-    public let routeTypes: [RouteType]?
-    public let status: Status?
-    
     internal enum CodingKeys: String, CodingKey {
-        case routeTypes = "route_types", status
+        case ID = "direction_id"
+        case name = "direction_name"
+        case routeID = "route_id"
+        case routeType = "route_type"
     }
-}
-
-public struct RoutesResponse: Codable {
-    public let routes: [Route]?
-    public let status: Status?
-}
-
-public struct RouteResponse: Codable {
-    public let route: Route?
-    public let status: Status?
-}
-
-public struct StopsOnRouteResponse: Codable {
-    public let stops: [StopOnRoute]?
-    public let status: Status?
-}
-
-public struct StopsByDistanceResponse: Codable {
-    public let stops: [StopGeosearch]?
-    public let status: Status?
-}
-
-public struct StopResponse: Codable {
-    public let stop: StopDetails?
-    public let status: Status?
-}
-
-public struct DeparturesResponse: Codable {
-    public let departures: [Departure]?
-    public let status: Status?
-}
-
-public struct DirectionsResponse: Codable {
-    public let directions: [Direction]?
-    public let status: Status?
 }

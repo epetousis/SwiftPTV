@@ -11,6 +11,8 @@
 		131D17851FB00DF900A19F42 /* APIDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D17841FB00DF900A19F42 /* APIDetails.swift */; };
 		131D17881FB0136D00A19F42 /* SwiftPTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137C67051FAF1DD100E9C462 /* SwiftPTV.framework */; };
 		131D178A1FB031B900A19F42 /* AllRoutesForTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D17891FB031B900A19F42 /* AllRoutesForTypeViewController.swift */; };
+		131D178C1FB062E300A19F42 /* PTVDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178B1FB062E300A19F42 /* PTVDirections.swift */; };
+		131D178E1FB069A700A19F42 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178D1FB069A700A19F42 /* Direction.swift */; };
 		137C670A1FAF1DD100E9C462 /* SwiftPTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 137C67081FAF1DD100E9C462 /* SwiftPTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F9C7871FAF201F005F5E13 /* Data++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C7791FAF201F005F5E13 /* Data++.swift */; };
 		13F9C7881FAF201F005F5E13 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C77A1FAF201F005F5E13 /* HMAC.swift */; };
@@ -51,6 +53,8 @@
 		131D17821FB00B1400A19F42 /* AllRouteTypesNamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRouteTypesNamesTableViewController.swift; sourceTree = "<group>"; };
 		131D17841FB00DF900A19F42 /* APIDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetails.swift; sourceTree = "<group>"; };
 		131D17891FB031B900A19F42 /* AllRoutesForTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRoutesForTypeViewController.swift; sourceTree = "<group>"; };
+		131D178B1FB062E300A19F42 /* PTVDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVDirections.swift; sourceTree = "<group>"; };
+		131D178D1FB069A700A19F42 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		137C67051FAF1DD100E9C462 /* SwiftPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		137C67081FAF1DD100E9C462 /* SwiftPTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPTV.h; sourceTree = "<group>"; };
 		137C67091FAF1DD100E9C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				13F9C7801FAF201F005F5E13 /* PTVDepartures.swift */,
 				13F9C7811FAF201F005F5E13 /* PTVStops.swift */,
 				13F9C7861FAF201F005F5E13 /* PTVRoutes.swift */,
+				131D178D1FB069A700A19F42 /* Direction.swift */,
+				131D178B1FB062E300A19F42 /* PTVDirections.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				13F9C78C1FAF201F005F5E13 /* Responses.swift in Sources */,
 				13F9C78B1FAF201F005F5E13 /* PTVRouteTypes.swift in Sources */,
 				13F9C7891FAF201F005F5E13 /* Departure.swift in Sources */,
+				131D178C1FB062E300A19F42 /* PTVDirections.swift in Sources */,
 				13F9C78F1FAF201F005F5E13 /* PTVStops.swift in Sources */,
 				13F9C7941FAF201F005F5E13 /* PTVRoutes.swift in Sources */,
 				13F9C7931FAF201F005F5E13 /* Route.swift in Sources */,
@@ -367,6 +374,7 @@
 				13F9C7881FAF201F005F5E13 /* HMAC.swift in Sources */,
 				13F9C7901FAF201F005F5E13 /* Utils.swift in Sources */,
 				13F9C78D1FAF201F005F5E13 /* SHA1.swift in Sources */,
+				131D178E1FB069A700A19F42 /* Direction.swift in Sources */,
 				13F9C7911FAF201F005F5E13 /* Stop.swift in Sources */,
 				13F9C7871FAF201F005F5E13 /* Data++.swift in Sources */,
 				13F9C78A1FAF201F005F5E13 /* Int++.swift in Sources */,
