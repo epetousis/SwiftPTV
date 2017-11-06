@@ -27,18 +27,18 @@ import Foundation
 
 public extension SwiftPTV {
 
-    func retrieveStopsOnRoute(routeID: Int, routeType: RouteType, _ closure: @escaping (StopsOnRouteResponse?) -> ()) {
+    func retrieveStopsOnRoute(routeID: Int, routeType: RouteType, _ completionHandler: @escaping (StopsOnRouteResponse?) -> ()) {
         guard let routeType = routeType.type else {
-            closure(nil)
+            completionHandler(nil)
             return
         }
         
         retrieveURL(endpoint: "/v3/stops/route/\(routeID)/route_type/\(routeType)", parameters: nil) { data in
             if let data = data {
                 let response = try? self.decoder.decode(StopsOnRouteResponse.self, from: data)
-                closure(response)
+                completionHandler(response)
             } else {
-                closure(nil)
+                completionHandler(nil)
             }
         }
     }

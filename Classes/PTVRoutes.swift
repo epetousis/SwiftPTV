@@ -27,7 +27,7 @@ import Foundation
 
 public extension SwiftPTV {
 
-    func retrieveRoutes(routeTypes: [RouteType]?, _ closure: @escaping (RoutesResponse?) -> ()) {
+    func retrieveRoutes(routeTypes: [RouteType]?, _ completionHandler: @escaping (RoutesResponse?) -> ()) {
         var parameters: [String : [Int]]? = nil
 
         if let routeTypes = routeTypes {
@@ -38,9 +38,9 @@ public extension SwiftPTV {
         retrieveURL(endpoint: "/v3/routes", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(RoutesResponse.self, from: data)
-                closure(response)
+                completionHandler(response)
             } else {
-                closure(nil)
+                completionHandler(nil)
             }
         }
     }

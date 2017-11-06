@@ -38,19 +38,19 @@ public class SwiftPTV {
         self.decoder = JSONDecoder()
     }
     
-    internal func retrieveURL(endpoint: String, parameters: [String:Any]?, _ closure: @escaping (Data?) -> ()) {
+    internal func retrieveURL(endpoint: String, parameters: [String:Any]?, _ completionHandler: @escaping (Data?) -> ()) {
         guard let url = self.returnURL(endpoint: endpoint, parameters: parameters) else {
-            closure(nil)
+            completionHandler(nil)
             return
         }
 
         URLSession.shared.dataTask(with: url) {data, request, error in
             guard let data = data else {
-                closure(nil)
+                completionHandler(nil)
                 return
             }
             
-            closure(data)
+            completionHandler(data)
             }.resume()
     }
     
