@@ -34,14 +34,15 @@ public extension SwiftPTV {
     /// - Parameters:
     ///   - stopID: Identifier of stop, returned by Stops API.
     ///   - routeType: Object identifying transport mode, returned by RouteTypes API.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
     ///   - completionHandler: The completion handler to call when the request is complete.
-    func retrieveDepartures(stopID: Int, routeType: RouteType, _ completionHandler: @escaping DeparturesResponseClosure) {
+    func retrieveDepartures(stopID: Int, routeType: RouteType, parameters: [String : Any]?, _ completionHandler: @escaping DeparturesResponseClosure) {
         guard let routeType = routeType.type else {
             completionHandler(nil)
             return
         }
         
-        retrieveURL(endpoint: "/v3/departures/route_type/\(routeType)/stop/\(stopID)", parameters: nil) { data in
+        retrieveURL(endpoint: "/v3/departures/route_type/\(routeType)/stop/\(stopID)", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(DeparturesResponse.self, from: data)
                 completionHandler(response)
@@ -57,15 +58,16 @@ public extension SwiftPTV {
     ///   - stopID: Identifier of stop, returned by Stops API.
     ///   - route: Object identifying route, returned by Routes API.
     ///   - routeType: Object identifying transport mode, returned by RouteTypes API.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
     ///   - completionHandler: The completion handler to call when the request is complete.
-    func retrieveDepartures(stopID: Int, route: Route, routeType: RouteType, _ completionHandler: @escaping DeparturesResponseClosure) {
+    func retrieveDepartures(stopID: Int, route: Route, routeType: RouteType, parameters: [String : Any]?, _ completionHandler: @escaping DeparturesResponseClosure) {
         guard let routeType = routeType.type,
             let routeID = route.ID else {
             completionHandler(nil)
             return
         }
         
-        retrieveURL(endpoint: "/v3/departures/route_type/\(routeType)/stop/\(stopID)/route/\(routeID)", parameters: nil) { data in
+        retrieveURL(endpoint: "/v3/departures/route_type/\(routeType)/stop/\(stopID)/route/\(routeID)", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(DeparturesResponse.self, from: data)
                 completionHandler(response)

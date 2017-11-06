@@ -32,14 +32,15 @@ public extension SwiftPTV {
     /// - Parameters:
     ///   - routeID: Identifier of route, returned by Routes API.
     ///   - routeType: Number identifying transport mode, returned via RouteTypes API.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
     ///   - completionHandler: The completion handler to call when the request is complete.
-    func retrieveStopsOnRoute(routeID: Int, routeType: RouteType, _ completionHandler: @escaping (StopsOnRouteResponse?) -> ()) {
+    func retrieveStopsOnRoute(routeID: Int, routeType: RouteType, parameters: [String : Any]?, _ completionHandler: @escaping (StopsOnRouteResponse?) -> ()) {
         guard let routeType = routeType.type else {
             completionHandler(nil)
             return
         }
         
-        retrieveURL(endpoint: "/v3/stops/route/\(routeID)/route_type/\(routeType)", parameters: nil) { data in
+        retrieveURL(endpoint: "/v3/stops/route/\(routeID)/route_type/\(routeType)", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(StopsOnRouteResponse.self, from: data)
                 completionHandler(response)
