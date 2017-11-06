@@ -42,16 +42,16 @@ public struct StopOnRoute: Codable {
 }
 
 public struct StopDetails: Codable {
-    let type: String?
-    let description: String?
-    let routeType: Int?
-    let location: StopLocation?
-    let amenities: StopAmenityDetails?
-    let accessibility: StopAccessibility?
-    let ID: Int?
-    let name: String?
+    public let type: String?
+    public let description: String?
+    public let routeType: Int?
+    public let location: StopLocation?
+    public let amenities: StopAmenityDetails?
+    public let accessibility: StopAccessibility?
+    public let ID: Int?
+    public let name: String?
     
-    enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case type = "station_type"
         case description = "station_description"
         case routeType = "route_type"
@@ -65,21 +65,21 @@ public struct StopDetails: Codable {
 }
 
 public struct StopLocation: Codable {
-    let gps: StopGPS?
+    public let gps: StopGPS?
 }
 
 public struct StopGPS: Codable {
-    let latitude: Int?
-    let longitude: Int?
+    public let latitude: Int?
+    public let longitude: Int?
 }
 
 public struct StopAmenityDetails: Codable {
-    let toilet: Bool?
-    let taxiRank: Bool?
-    let carParking: String?
-    let cctv: Bool?
+    public let toilet: Bool?
+    public let taxiRank: Bool?
+    public let carParking: String?
+    public let cctv: Bool?
     
-    enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case toilet = "toilet"
         case taxiRank = "taxi_rank"
         case carParking = "car_parking"
@@ -89,15 +89,15 @@ public struct StopAmenityDetails: Codable {
 }
 
 public struct StopAccessibility: Codable {
-    let lighting: Bool?
-    let stairs: Bool?
-    let escalator: Bool?
-    let lifts: Bool?
-    let hearingLoop: Bool?
-    let tactileTiles: Bool?
-    let wheelchair: StopAccessibilityWheelchair?
+    public let lighting: Bool?
+    public let stairs: Bool?
+    public let escalator: Bool?
+    public let lifts: Bool?
+    public let hearingLoop: Bool?
+    public let tactileTiles: Bool?
+    public let wheelchair: StopAccessibilityWheelchair?
     
-    enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case lighting = "lighting"
         case stairs = "stairs"
         case escalator = "escalator"
@@ -110,12 +110,12 @@ public struct StopAccessibility: Codable {
 }
 
 public struct StopAccessibilityWheelchair: Codable {
-    let accessibleRamp: Bool?
-    let accessibleParking: Bool?
-    let accessiblePhone: Bool?
-    let accessibleToilet: Bool?
+    public let accessibleRamp: Bool?
+    public let accessibleParking: Bool?
+    public let accessiblePhone: Bool?
+    public let accessibleToilet: Bool?
     
-    enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case accessibleRamp = "accessible_ramp"
         case accessibleParking = "accessible_parking"
         case accessiblePhone = "accessible_phone"
@@ -125,14 +125,14 @@ public struct StopAccessibilityWheelchair: Codable {
 }
 
 public struct StopGeosearch: Codable {
-    let distance: Double?
-    let name: String?
-    let ID: Int?
-    let routeType: Int?
-    let latitude: Double?
-    let longitude: Double?
+    public let distance: Double?
+    public let name: String?
+    public let ID: Int?
+    public let routeType: Int?
+    public let latitude: Double?
+    public let longitude: Double?
     
-    enum CodingKeys: String, CodingKey {
+    internal enum CodingKeys: String, CodingKey {
         case distance = "stop_distance"
         case name = "stop_name"
         case ID = "stop_id"
