@@ -25,6 +25,11 @@
 
 import Foundation
 
+public struct Location {
+    let latitude: Double
+    let longitude: Double
+}
+
 public extension SwiftPTV {
 
     /// Retrieve all stops on a specific route.
@@ -66,6 +71,23 @@ public extension SwiftPTV {
         retrieveURL(endpoint: "/v3/stops/\(stopID)/route_type/\(routeType)", parameters: parameters) { data in
             if let data = data {
                 let response = try? self.decoder.decode(StopResponse.self, from: data)
+                completionHandler(response)
+            } else {
+                completionHandler(nil)
+            }
+        }
+    }
+
+    /// Retrieve all stops near a specific location.
+    ///
+    /// - Parameters:
+    ///   - location: The object representing the latitude and longitude of the location.
+    ///   - parameters: The parameters to be passed to the API as a query string. Can be `nil`.
+    ///   - completionHandler: The completion handler to call when the request is complete.
+    func retrieveStopsNearLocation(location: Location, parameters: [String : Any]?, _ completionHandler: @escaping (StopsByDistanceResponse?) -> ()) {
+        retrieveURL(endpoint: "/v3/stops/location/\(location.latitude),\(location.longitude)", parameters: parameters) { data in
+            if let data = data {
+                let response = try? self.decoder.decode(StopsByDistanceResponse.self, from: data)
                 completionHandler(response)
             } else {
                 completionHandler(nil)

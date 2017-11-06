@@ -123,3 +123,21 @@ public struct StopAccessibilityWheelchair: Codable {
     }
     
 }
+
+public struct StopGeosearch: Codable {
+    let distance: Double?
+    let name: String?
+    let ID: Int?
+    let routeType: Int?
+    let latitude: Double?
+    let longitude: Double?
+    
+    enum CodingKeys: String, CodingKey {
+        case distance = "stop_distance"
+        case name = "stop_name"
+        case ID = "stop_id"
+        case routeType = "route_type"
+        case latitude = "stop_latitude"
+        case longitude = "stop_longitude"
+    }
+}
