@@ -32,6 +32,10 @@ github "evilgoldfish/SwiftPTV"
 
 Run `carthage update` to build the framework and drag the newly built `SwiftPTV.framework` into your Xcode project.
 
+## Example
+
+You can run the included example app by cloning the repository, opening `SwiftPTV.xcodeproj` and choosing the `SwiftPTVExampleiOS` scheme on the top left of the Xcode window.
+
 ## Author
 
 * evilgoldfish
