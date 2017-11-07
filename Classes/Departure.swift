@@ -67,8 +67,7 @@ public extension Departure {
         let platformNumber = try? container.decode(String.self, forKey: .platformNumber)
         let flags = try? container.decode(String.self, forKey: .flags)
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let dateFormatter = ISO8601DateFormatter()
         let scheduledDeparture = scheduledDepartureString != nil ? dateFormatter.date(from: scheduledDepartureString!) : nil
         let estimatedDeparture = estimatedDepartureString != nil ? dateFormatter.date(from: estimatedDepartureString!) : nil
         

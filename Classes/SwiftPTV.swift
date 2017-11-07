@@ -62,11 +62,8 @@ public class SwiftPTV {
     
     internal func returnURL(endpoint: String, parameters: [String:Any]?) -> URL?
     {
-        let RFC3339DateFormatter = DateFormatter()
-        RFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        RFC3339DateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        RFC3339DateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-        let timestampComponent = URLQueryItem(name: "timestamp", value: RFC3339DateFormatter.string(from: Date()))
+        let dateFormatter = ISO8601DateFormatter()
+        let timestampComponent = URLQueryItem(name: "timestamp", value: dateFormatter.string(from: Date()))
 
         var components = URLComponents()
         components.path = endpoint
