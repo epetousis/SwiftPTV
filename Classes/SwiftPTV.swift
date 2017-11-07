@@ -31,11 +31,17 @@ public class SwiftPTV {
     
     internal var routeTypes: [RouteType]?
     internal let decoder: JSONDecoder
+    internal let session: URLSession
 
-    public init(apiKey: String, userID: String) {
+    public init(apiKey: String, userID: String, session: URLSession) {
         self.apiKey = apiKey
         self.userID = userID
         self.decoder = JSONDecoder()
+        self.session = session
+    }
+
+    public convenience init(apiKey: String, userID: String) {
+        self.init(apiKey: apiKey, userID: userID, session: URLSession.shared)
     }
     
     internal func retrieveURL(endpoint: String, parameters: [String:Any]?, _ completionHandler: @escaping (Data?) -> ()) {
@@ -44,7 +50,7 @@ public class SwiftPTV {
             return
         }
 
-        URLSession.shared.dataTask(with: url) {data, request, error in
+        session.dataTask(with: url) {data, request, error in
             guard let data = data else {
                 completionHandler(nil)
                 return
