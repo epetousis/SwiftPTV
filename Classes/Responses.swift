@@ -77,3 +77,10 @@ public struct DirectionsResponse: Codable {
     public let directions: [Direction]?
     public let status: Status?
 }
+
+public struct SearchResult: Codable {
+    public let stops: [ResultStop]?
+    public let routes: [ResultRoute]?
+    public let outlets: [ResultOutlet]?
+    public let status: Status?
+}

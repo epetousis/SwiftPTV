@@ -15,6 +15,10 @@
 		131D178E1FB069A700A19F42 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178D1FB069A700A19F42 /* Direction.swift */; };
 		131D178F1FB0754F00A19F42 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178D1FB069A700A19F42 /* Direction.swift */; };
 		131D17901FB0755200A19F42 /* PTVDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D178B1FB062E300A19F42 /* PTVDirections.swift */; };
+		1325922F200222A300533CE1 /* PTVSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325922E200222A300533CE1 /* PTVSearch.swift */; };
+		13259230200222A300533CE1 /* PTVSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325922E200222A300533CE1 /* PTVSearch.swift */; };
+		13259232200223BD00533CE1 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13259231200223BD00533CE1 /* SearchResults.swift */; };
+		13259233200223BD00533CE1 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13259231200223BD00533CE1 /* SearchResults.swift */; };
 		137C670A1FAF1DD100E9C462 /* SwiftPTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 137C67081FAF1DD100E9C462 /* SwiftPTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13F9C7871FAF201F005F5E13 /* Data++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C7791FAF201F005F5E13 /* Data++.swift */; };
 		13F9C7881FAF201F005F5E13 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9C77A1FAF201F005F5E13 /* HMAC.swift */; };
@@ -57,6 +61,8 @@
 		131D17891FB031B900A19F42 /* AllRoutesForTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRoutesForTypeViewController.swift; sourceTree = "<group>"; };
 		131D178B1FB062E300A19F42 /* PTVDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVDirections.swift; sourceTree = "<group>"; };
 		131D178D1FB069A700A19F42 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		1325922E200222A300533CE1 /* PTVSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVSearch.swift; sourceTree = "<group>"; };
+		13259231200223BD00533CE1 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		137C67051FAF1DD100E9C462 /* SwiftPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		137C67081FAF1DD100E9C462 /* SwiftPTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPTV.h; sourceTree = "<group>"; };
 		137C67091FAF1DD100E9C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,10 +161,12 @@
 				13F9C77E1FAF201F005F5E13 /* Responses.swift */,
 				13F9C7831FAF201F005F5E13 /* Stop.swift */,
 				13F9C7851FAF201F005F5E13 /* Route.swift */,
+				13259231200223BD00533CE1 /* SearchResults.swift */,
 				13F9C77D1FAF201F005F5E13 /* PTVRouteTypes.swift */,
 				13F9C7801FAF201F005F5E13 /* PTVDepartures.swift */,
 				13F9C7811FAF201F005F5E13 /* PTVStops.swift */,
 				13F9C7861FAF201F005F5E13 /* PTVRoutes.swift */,
+				1325922E200222A300533CE1 /* PTVSearch.swift */,
 				131D178D1FB069A700A19F42 /* Direction.swift */,
 				131D178B1FB062E300A19F42 /* PTVDirections.swift */,
 			);
@@ -380,6 +388,8 @@
 				13F9C7911FAF201F005F5E13 /* Stop.swift in Sources */,
 				13F9C7871FAF201F005F5E13 /* Data++.swift in Sources */,
 				13F9C78A1FAF201F005F5E13 /* Int++.swift in Sources */,
+				1325922F200222A300533CE1 /* PTVSearch.swift in Sources */,
+				13259232200223BD00533CE1 /* SearchResults.swift in Sources */,
 				13F9C78E1FAF201F005F5E13 /* PTVDepartures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +413,8 @@
 				13F9C7BD1FAF24F7005F5E13 /* Route.swift in Sources */,
 				13F9C7BE1FAF24F7005F5E13 /* PTVRoutes.swift in Sources */,
 				131D178F1FB0754F00A19F42 /* Direction.swift in Sources */,
+				13259230200222A300533CE1 /* PTVSearch.swift in Sources */,
+				13259233200223BD00533CE1 /* SearchResults.swift in Sources */,
 				131D17901FB0755200A19F42 /* PTVDirections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
