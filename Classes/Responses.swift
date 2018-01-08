@@ -68,8 +68,14 @@ public struct StopResponse: Codable {
     public let status: Status?
 }
 
+// NB: PTV's documentation for this response is incomplete, this may break.
 public struct DeparturesResponse: Codable {
     public let departures: [Departure]?
+    public let stops: [String: StopGeosearch]?
+    public let routes: [String: Route]?
+    // TODO: public let runs
+    public let directions: [String: Direction]?
+    // TODO: public let disruptions
     public let status: Status?
 }
 
