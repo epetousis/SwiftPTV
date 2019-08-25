@@ -12,4 +12,4 @@ language: objective-c
 script:
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SwiftPTV.xcworkspace -scheme SwiftPTV-Example -sdk iphonesimulator11.0 -destination 'platform=iOS Simulator,name=iPhone 8' ONLY_ACTIVE_ARCH=NO | xcpretty
 - set -o pipefail && xcodebuild -project SwiftPTV.xcodeproj -scheme SwiftPTViOS -sdk iphonesimulator13.0 -destination 'platform=iOS Simulator,name=iPhone 8' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+- pod lib lint --allow-warnings
