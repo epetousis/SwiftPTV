@@ -1,6 +1,6 @@
 # SwiftPTV
 
-[![CI Status](http://img.shields.io/travis/evilgoldfish/SwiftPTV.svg?style=flat)](https://travis-ci.org/evilgoldfish/SwiftPTV)
+[![CI Status](http://img.shields.io/travis/evilgoldfish/SwiftPTV.svg?style=flat)](https://travis-ci.org/epetousis/SwiftPTV)
 [![Version](https://img.shields.io/cocoapods/v/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)
 [![License](https://img.shields.io/cocoapods/l/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftPTV.svg?style=flat)](http://cocoapods.org/pods/SwiftPTV)

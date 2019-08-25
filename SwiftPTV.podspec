@@ -11,7 +11,6 @@ PTV Timetable V3 API framework for iOS and macOS written in Swift, with growing 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'Evan'
   s.source           = { :git => 'https://github.com/evilgoldfish/SwiftPTV.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/evilgoldfish01'
 
 
   s.ios.deployment_target = '10.0'
